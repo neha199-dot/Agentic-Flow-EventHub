@@ -22,6 +22,10 @@
 name: CI – Pull Request Checks
 
 on:
+  # Run on every push to main
+  push:
+    branches: [main]
+
   # Run on every PR that targets main (opened, new commits pushed, reopened)
   pull_request:
     branches: [main]
