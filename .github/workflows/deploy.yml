@@ -33,11 +33,7 @@
 name: Deploy – Production
 
 on:
-  # Auto-deploy when code is merged (pushed) to main
-  push:
-    branches: [main]
-
-  # Allow on-demand deploys from the GitHub Actions UI
+  # Manual-only — deploy from the GitHub Actions UI when ready
   workflow_dispatch:
 
 # IMPORTANT: cancel-in-progress MUST be false for deployments.
